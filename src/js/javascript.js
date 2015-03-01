@@ -2,6 +2,10 @@
 
 $(function() {
     $( "#radio" ).buttonset();
-    $( "#adults" ).selectmenu();
-    $( "#children").selectmenu();
+    $( "#adults" ).selectmenu({
+    	width: 75
+    });
+    $( "#children").selectmenu({
+    	width: 85
+    });
   });

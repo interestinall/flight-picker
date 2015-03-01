@@ -89,9 +89,8 @@ label{
 
 select { 
 
-	width: 100px;
 }
-.overflow { height: 36px; }
+
 
 
 
@@ -127,7 +126,7 @@ span.ui-button-text{
 }
 
 .d-date, .r-date, .adults, .children{
-	display: inline;
+	display: inline-block;
 }
 
 .adults, .children{
@@ -154,15 +153,38 @@ span.ui-button-text{
 	margin-bottom: 1.5%;
 }
 
-
-
-
-
-
 span #adults-button{
 	margin-top: 20px;
 }
 
 .calendar-number-persons{
 	display:block;
+}
+
+input, select{
+	vertical-align: bottom;
+}
+
+
+span.ui-selectmenu-button{
+	background:white;
+	vertical-align: bottom;
+	height:36px;
+	width: 75px;
+	// border: 1px solid #3e3e3e;
+}
+
+.ui-menu-item{
+	background:#3e3e3e;
+}
+
+li.ui-menu-item.ui-state-focus{
+	background: #0065b8;
+	color:white;
+}
+
+// THIS IS WHAT YOU ARE WORKING ON BRUH
+span.ui-selectmenu-text{
+ color: black;
+
 }
