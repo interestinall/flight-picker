@@ -3,9 +3,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color:white;
 }
 html, body{
 	height: 100%;
+	font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 }
 
 h1{
@@ -16,32 +18,151 @@ h1{
 
 }
 .wrapper{
-	width: 30%;
+	width: 100%;
 	margin: 0 auto;
 	background: white;
 	height: 450px;
-
+    background: url("../../dest/img/beach.jpg") no-repeat bottom center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 
 #flight-picker{
-	margin-top: 10%;
-	height: 450px;
-	width: 100%;
-	background: #00b8e4;
-	opacity: 1.0;
-	border-radius: 10px;
+	// margin-top: 150px;
+	margin: 0 auto;
+	height: 426px;
+	width: 90%;
+	background: -webkit-gradient(radial,center center,0,center center,460,from(rgba(31,31,31,0.4)),to rgba(31,31,31,0.9));
+	background: -webkit-radial-gradient(circle,rgba(31,31,31,0.4),rgba(31,31,31,0.9));
+	background: -moz-radial-gradient(circle,rgba(31,31,31,0.4),rgba(31,31,31,0.9));
+	background: -ms-radial-gradient(circle,rgba(31,31,31,0.4),rgba(31,31,31,0.9));
 	overflow:hidden;
 }
 
 #header{
-	margin-top: 5px;
-	background: white;
-	border-radius: 10px;
-	border: 1px solid #00b8e4;
-	margin-left: 3px;
-	margin-right:3px;
+
 }
-input #ft{
-	width: 400px;
+input[type="text"] {
+/*   width: 341px;
+  height: 36px;
+  border-radius: 4px; */
+
+}
+
+input[name="flightFrom"], input[name="flightTo"] {
+  width: 341px;
+  height: 36px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1em;
+}
+
+input[name="departure-date"], input[name="return-date"] {
+  width: 182px;
+  height: 36px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1em;
+}
+
+
+
+label{
+	display: block;
+	color: #c7c7c7;
+	font-size: .9em;
+
+}
+
+#adults-button, #children-button{
+
+
+
+}
+
+.adults{
+	align: bottom;
+}
+
+select { 
+
+	width: 100px;
+}
+.overflow { height: 36px; }
+
+
+
+span #adults-button .ui-selectmenu-button {
+	line-height: 1;
+	background:black;
+}
+
+.ui-button.ui-widget.ui-state-default{
+	background: #3e3e3e;
+}
+
+.ui-button.ui-widget.ui-state-active{
+	background: #0065b8;
+}
+
+.ui-button.ui-widget.ui-state-hover{
+	background: #0065b8;
+}
+
+.ui-button{
+	height: 36px;
+}
+
+span.ui-button-text{
+	font-size: .8em;
+	padding-top: 2%;
+}
+
+.from, .to{
+	display: inline-block;
+
+}
+
+.d-date, .r-date, .adults, .children{
+	display: inline;
+}
+
+.adults, .children{
+
+}
+
+.to, .r-date, .adults, .children{
+	margin-left: 24px;
+}
+.form-box{
+	padding: 5% 5%;
+}
+
+.ui-buttonset{
+	margin-bottom: 1%;
+}
+
+.cities{
+	margin-bottom: 1%;
+
+}
+
+.one-b{
+	margin-bottom: 1.5%;
+}
+
+
+
+
+
+
+span #adults-button{
+	margin-top: 20px;
+}
+
+.calendar-number-persons{
+	display:block;
 }

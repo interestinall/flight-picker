@@ -4,24 +4,69 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="dest/js/script.min.js"></script>
 	<link rel="stylesheet" href="dest/css/style.css">
+	<link rel="stylesheet" href="dest/css/jquery-ui.css">
 </head>
 <body>
 	<div class="wrapper">
 	  <div id="flight-picker">
 	    <div id="header">
-	      <h1>Book Your Flight Now</h1>
 	    </div>
-	    <div class="from">
-	      <label for="ff">Leaving From:</label>
-	      <input id="ff" name="flightFrom" class="watermark watermarked autocomplete ui-corner-all" autocomplete="off" title="City or Airport Code" value="">
-	    </div>
-	    <div class="to">
-	      <label for="ft">Leaving To:</label>
-	      <input id="ft" name="flightFrom" class="watermark watermarked autocomplete ui-corner-all" autocomplete="off" title="City or Airport Code" value="">
-	    </div>
+	    <div class="form-box">
+		    <div id="radio">
+			  <input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">Roundtrip</label>
+			  <input type="radio" id="radio2" name="radio"><label for="radio2">One way</label>
+			  <input type="radio" id="radio3" name="radio"><label for="radio3">Multiple destinations</label>
+	        </div>
+	        <div class="cities">
+			    <div class="from">
+			      <label class="one-b" for="ff">Flying from</label>
+			      <input type="text" id="ff" name="flightFrom" class="f" autocomplete="off" title="City or Airport Code" placeholder=" City or airport" value="">
+			    </div>
+			    <div class="to">
+			      <label class="one-b" for="ft">Flying to</label>
+			      <input type="text" id="ft" name="flightTo" class="t" autocomplete="off" title="City or Airport Code" placeholder=" City or airport" value="">
+			    </div>
+		    </div>
+		    <div class="calendar-number-persons">
+			    <div class="d-date">
+			    	<label class="one-b" for="dd">Departing</label>
+			    	 <input type="text" id="dd" name="departure-date" class="" autocomplete="off" title="departing date" placeholder=" dd/mm/yy" value="">
+			    </div>
+			    <div class="r-date">
+			    	<label class="one-b" for="rd">Returning</label>
+			    	 <input type="text" id="rd" name="return-date" class="" autocomplete="off" title="returning date" placeholder=" dd/mm/yy" value="">
+			    </div>
+			    <div class="adults">
+			        <label class="one-b top" for="adults">Adults (18+)</label>
+				    <select name="adults" id="adults">
+				      <option selected="selected">1</option>
+				      <option>2</option>
+				      <option>3</option>
+				      <option>4</option>
+				      <option>5</option>
+				      <option>6</option>
+				    </select>
+				</div>
+				<div class="children">
+			        <label class="one-b top" for="children">Children (0-17)</label>
+				    <select name="children" id="children">
+				      <option selected="selected">0</option>
+				      <option>1</option>
+				      <option>2</option>
+				      <option>3</option>
+				      <option>4</option>
+				      <option>5</option>
+				      <option>6</option>
+				    </select>
+				</div>
+		    </div>
+		</div>    
 	  </div>
 	</div>
+	
 	<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
