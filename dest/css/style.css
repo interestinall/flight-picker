@@ -29,9 +29,32 @@ h1 {
   background-size: cover;
 }
 
-#flight-picker {
+.wrapper-big {
+  width: 100%;
   margin: 0 auto;
-  height: 426px;
+  background: white;
+  height: 750px;
+  background: url("../../dest/img/beach.jpg") no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.flight-picker {
+  margin: 0 auto;
+  height: 450px;
+  width: 90%;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(31, 31, 31, 0.4)), to rgba(31, 31, 31, 0.9));
+  background: -webkit-radial-gradient(circle, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.9));
+  background: -moz-radial-gradient(circle, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.9));
+  background: -ms-radial-gradient(circle, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.9));
+  overflow: hidden;
+}
+
+.flight-picker-big {
+  margin: 0 auto;
+  height: 750px;
   width: 90%;
   background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(31, 31, 31, 0.4)), to rgba(31, 31, 31, 0.9));
   background: -webkit-radial-gradient(circle, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.9));
@@ -41,9 +64,7 @@ h1 {
 }
 
 input[type="text"] {
-  /*   width: 341px;
-    height: 36px;
-    border-radius: 4px; */
+  padding-left: 10px;
 }
 
 input[name="flightFrom"], input[name="flightTo"] {
@@ -111,7 +132,7 @@ span.ui-button-text {
 }
 
 .form-box {
-  padding: 5% 5%;
+  padding: 6% 5% 5%;
 }
 
 .ui-buttonset {
@@ -156,6 +177,66 @@ li.ui-menu-item.ui-state-focus {
 
 span.ui-selectmenu-text {
   color: black;
+}
+
+#ui-datepicker-div {
+  background: white;
+}
+
+div.ui-datepicker-header {
+  background: #3e3e3e;
+}
+
+span.ui-icon {
+  color: white;
+}
+
+td.ui-datepicker-week-end .ui-state-default {
+  background: #3e3e3e;
+  color: white;
+}
+
+table.ui-datepicker-calendar tbody tr td a.ui-state-default {
+  background: #3e3e3e;
+  color: white;
+}
+
+table.ui-datepicker-calendar tbody tr td a.ui-state-default.ui-state-hover {
+  background: #0065b8;
+}
+
+table.ui-datepicker-calendar tbody tr td a.ui-state-default.ui-state-highlight {
+  background: #0065b8;
+}
+
+#submit {
+  width: 69px;
+  height: 48px;
+  color: #3e3e3e;
+  background: #ffc600;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.multiple {
+  margin-top: 1%;
+  border-top: 1px grey solid;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 1%;
+  margin-top: .5%;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
