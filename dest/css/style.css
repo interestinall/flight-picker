@@ -83,6 +83,14 @@ input[name="departure-date"], input[name="return-date"] {
   font-size: 1em;
 }
 
+input[type="text"].i-small {
+  width: 210px;
+}
+
+input[type="text"].d-small {
+  width: 132px;
+}
+
 label {
   display: block;
   color: #c7c7c7;
@@ -155,7 +163,7 @@ span #adults-button {
   display: block;
 }
 
-input, select {
+input, select, .d-date {
   vertical-align: bottom;
 }
 
@@ -229,6 +237,7 @@ table.ui-datepicker-calendar tbody tr td a.ui-state-default.ui-state-highlight {
 .multiple {
   margin-top: 1%;
   border-top: 1px grey solid;
+  padding-bottom: 1%;
 }
 
 h3 {
@@ -236,7 +245,16 @@ h3 {
   font-size: 1em;
   margin-bottom: 1%;
   margin-top: .5%;
+  padding-top: 1%;
   font-weight: normal;
+}
+
+.pl {
+  margin-left: 24px;
+}
+
+.mult-box {
+  width: 650px;
 }
 
 /*# sourceMappingURL=style.css.map */

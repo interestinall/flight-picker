@@ -16,12 +16,16 @@ $(function() {
  $( "#radio2" ).change(function() {
       $( ".r-date" ).hide();
       $( ".multiple" ).addClass( "hide" );
+      $(".wrapper-big").removeClass("wrapper-big").addClass("wrapper");
+      $(".flight-picker-big").removeClass("flight-picker-big").addClass("flight-picker");
       console.log("radio two triggered");
     });
 
  $( "#radio1" ).change(function() {
       $( ".r-date" ).show();
-       $( ".multiple" ).addClass( "hide" );
+      $( ".multiple" ).addClass( "hide" );
+      $(".wrapper-big").removeClass("wrapper-big").addClass("wrapper");
+      $(".flight-picker-big").removeClass("flight-picker-big").addClass("flight-picker");
       console.log("radio one triggered");
     });
 
